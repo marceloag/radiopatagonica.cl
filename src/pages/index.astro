@@ -1,5 +1,6 @@
 ---
 import Logo from './logo.astro'
+import Player from '../components/Player';
 ---
 
 <html lang="en">
@@ -8,13 +9,14 @@ import Logo from './logo.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Pronto ...</title>
+		<title>📻 Radio Patagónica - 1260 AM - Pronto ...</title>
 	</head>
 	<body>
 		<main class="w-full h-screen bg-[#2B509F] flex flex-col items-center justify-center">
-        <figure class=" w-56 mb-4">
+        <figure class="w-56 mb-4">
           <Logo></Logo>
         </figure>
+        <Player client:load />
     </main>
 	</body>
 </html>
