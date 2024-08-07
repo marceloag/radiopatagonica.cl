@@ -20,7 +20,7 @@ function Player() {
 
   return (
     <div>
-      <audio ref={audioRef} autoPlay={isPlaying} src="http://34.172.235.38:8000/stream" type="audio/mpegURL"/>
+      <audio ref={audioRef} autoPlay={isPlaying} src="https://stream.radiopatagonica.cl/stream" type="audio/mpegURL"/>
       {isPlaying ? (<a href="#" onClick={pauseAudio} className="boton rounded-full w-20 h-20 border-4 border-solid border-white  flex flex-row items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="white" fill="white" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
